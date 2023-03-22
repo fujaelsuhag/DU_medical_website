@@ -1,0 +1,313 @@
+/* 
+Name: Dhaka University Medical Website
+Authority: Dhaka University
+Version: 1.0
+Developer: Fujael Ahmed Suhag
+*/
+
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: 0;
+}
+.container{
+    background-color: #f7f8fb;
+}
+
+/* top section started */
+
+.top{
+    background-color: #002147;
+}
+
+.top_main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1140px;
+    height: 80px;
+    margin: 0 auto;
+}
+.top_left img{
+    width: 250px;
+    cursor: pointer;
+}
+.top_right a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* top section ended */
+
+
+/* hero section started */
+
+.hero .navigation{
+    width: 1140px;
+    margin: 0 auto;
+}
+.hero .navigation ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 16px;
+}
+.hero .navigation ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 20px;
+    padding: 16px 15px 10px;
+    transition: 0.2s;
+    border-bottom: 2px solid #000;
+}
+.hero .navigation ul li a:hover{
+    color: #fff;
+    background-color: #002147;
+    border-radius: 0 0px 10px 10px;
+}
+.hero .description{
+    width: 1140px;
+    margin: 0 auto;
+}
+.hero .description  .title{
+    text-align: center;
+    margin-top: 50px;
+}
+.hero .description .sub_title{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.hero .description p{
+    text-align: justify;
+    font-size: 17px;
+}
+
+/* hero section ended */
+
+
+/* gallery section started */
+
+.gallery{
+    width: 1140px;
+    margin: 30px auto;
+    box-shadow: 0 0 10px rgba(0,0,0, .05);
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 30px 0;
+}
+.gallery .title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+.gallery .photos{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.gallery .photos img{
+    height: 200px;
+    border-radius: 10px;
+    margin: 15px;
+    border: 1px solid #000;
+    padding: 5px;
+    cursor: zoom-in;
+    transition: 0.2s;
+    background-color: #fff;
+}
+.gallery .photos img:hover{
+    transform: scale(1.1);
+}
+
+/* gallery section ended */
+
+
+/* bottom section started */
+
+footer{
+    height: 50px;
+    background-color: #002147;
+    line-height: 50px;
+}
+.bottom{
+    width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+}
+.bottom a{
+    text-decoration: none;
+    color: yellow;
+}
+.bottom a:hover{
+    text-decoration: underline;
+}
+
+/* bottom section ended */
+
+
+
+
+/* Appointment page's css started from here */
+.appointment_form{
+    width: 800px;
+    margin: 20px auto 50px;
+    background-color: #ddd;
+    padding: 12px 16px 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0, .05);
+    border-radius: 10px;
+    transition: 0.3s;
+}
+.appointment_form:hover {
+    box-shadow: 0px 6px 17px #000;
+    transform: translatey(-5px);
+}
+.appointment_form h3{
+    text-align: center;
+    margin: 10px 0;
+}
+.appointment_form .input_group{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.appointment_form .input_group input, .appointment_form .input_group textarea{
+    width: 350px;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin: 8px 12px;
+    border: 1.5px solid #000;
+    transition: 0.2s;
+}
+.appointment_form .input_group input:focus, .appointment_form .input_group textarea:focus{
+    border: 1px solid #002147;
+    background-color: #ddd;
+}
+.appointment_form .input_group input:hover, .appointment_form .input_group textarea:hover{
+    border: 1px solid #002147;
+    background-color: #ddd;
+}
+
+.appointment_form .input_group button{
+    padding: 10px 14px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-weight: bold;
+    border: 1.5px solid #002147;
+    background-color: #fff;
+    color: #002147;
+    transition: 0.3s;
+    border-radius: 4px;
+}
+.appointment_form .input_group button:hover{
+    color: #fff;
+    background-color: #002147;
+}
+
+
+
+
+/* Doctors page's css started from here */
+.description .doctors_list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+.description .doctors_list .doctor{
+    width: 250px;
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0, .05);
+    transition: 0.3s;
+}
+.description .doctors_list .doctor:hover{
+    box-shadow: 0 10px 10px -5px rgba(0,0,0, .5);
+    transform: translateY(-5px);
+}
+.description .doctors_list .doctor .image{
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+.description .doctors_list .doctor .image img{
+    border-radius: 50%;
+}
+.description .doctors_list .doctor .designation{
+    color: #444;
+}
+.description .doctors_list .doctor .link{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+.description .doctors_list .doctor .link a{
+    text-decoration: none;
+}
+.description .doctors_list .doctor .link a:hover{
+    text-decoration: underline;
+}
+
+
+
+
+/* Schedule page's css started from here */
+.schedule{
+    display: flex;
+    margin: 20px 0;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.schedule .single_schedule{
+    background-color: #002147;
+    padding: 30px 20px;
+    margin: 15px;
+    color: #f7f8fb;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0,0,0, .05);
+    transition: 0.3s;
+}
+.schedule .single_schedule:hover {
+    box-shadow: 0px 6px 17px #000;
+    transform: translatey(-5px);
+}
+.schedule .single_schedule h4{
+    text-align: center;
+    font-size: 25px;
+}
+.schedule .single_schedule p{
+    text-align: center;
+    font-size: 22px;
+}
+
+.schedule .single_schedule .treatment{
+    font-size: 30px;
+    margin-top: 20px;
+}
+.schedule .single_schedule h3{
+    font-size: 25px;
+    margin: 8px 0;
+}
+.schedule .single_schedule a{
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #fff;
+    color: #002147;
+    padding: 8px 12px;
+    margin-top: 20px;
+    font-size: 20px;
+    display: inline-block;
+    transition: 0.3s;
+}
+.schedule .single_schedule a:hover{
+    background-color: #002147;
+    color: #fff;
+}
